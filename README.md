@@ -6,9 +6,9 @@
 
 ```
 docker run -d --name ss-privoxy -p 8118:8118  \
-  && -e "SERVER_ADDR={YOUR SERVER}" \
-  && -e "METHOD=aes-256-cfb" \
-  && -e "PASSWORD={YOUR PASSWORD}" \
-  && -e "SSPORT={SERVER PORT}" \
-  && -e "PROXYPORT=8118" ss-privoxy:latest
+  -e "SERVER_ADDR={YOUR SERVER}" \
+  -e "METHOD=aes-256-cfb" \
+  -e "PASSWORD={YOUR PASSWORD}" \
+  -e "SSPORT={SERVER PORT}" \
+  -e "PROXYPORT=8118" zzjzz9266a/ss-privoxy
 ```

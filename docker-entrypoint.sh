@@ -13,4 +13,4 @@ echo "listen-address  0.0.0.0:${PROXYPORT}" >> /etc/privoxy/config
 echo "forward-socks5   /               127.0.0.1:1080 ." >> /etc/privoxy/config
 
 nohup privoxy --no-daemon /etc/privoxy/config &
-ss-local -s ${SERVER_ADDR} -p ${SSPORT} -m ${METHOD} -k ${PASSWORD} -l 1080 -u --fast-open
+ss-local -s ${SERVER_ADDR} -p ${SSPORT} -m ${METHOD} -k ${PASSWORD} -l 1080
